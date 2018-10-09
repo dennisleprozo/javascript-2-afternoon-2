@@ -377,7 +377,7 @@ var user4 = {
   username: "infiniteLoop"
 };
 
-// users.push(user1, user2, user3, user4);
+users.push(user1, user2, user3, user4);
 
 /*
   Now you have a very common data structure. 
