@@ -9,7 +9,7 @@
 ////////// PROBLEM 1 //////////
 
 // Do not edit the code below.
-var arr = [10,20,30];
+var arr = [10, 20, 30];
 // Do not edit the code above.
 
 /*
@@ -18,15 +18,14 @@ var arr = [10,20,30];
 */
 
 //Code Here
-function first(arr){
-  return(arr[0]);
+function first(arr) {
+  return arr[0];
 }
-
 
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
-var arr = [40,50,60];
+var arr = [40, 50, 60];
 // Do not edit the code above.
 
 /*
@@ -35,15 +34,15 @@ var arr = [40,50,60];
 */
 
 //Code Here
-function last(arr){
-  return(arr[arr.length - 1]);
+function last(arr) {
+  return arr[arr.length - 1];
 }
 
 
 ////////// PROBLEM 3 //////////
 
 // Do not edit the code below.
-var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
+var family = ["Tyler", "Jordyn", "Ryan", "Chelsey", "Ireland"];
 // Do not edit the code above.
 
 /*
@@ -52,18 +51,17 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-function looper(fam){
-  for(i=0; i<fam.length; i++){
-    alert(fam[i]);
+function looper(famly) {
+  for (i = 0; i < famly.length; i++) {
+    alert(famly[i]);
   }
-  return fam;
+  return famly;
 }
-
 
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
-var letters = ['A', 'B', 'C', 'D', 'E'];
+var letters = ["A", "B", "C", "D", "E"];
 // Do not edit the code above.
 
 /*
@@ -72,18 +70,17 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
-function reversedLooper(alpha){
-  for(let i=alpha.length-1; i>=0; i--){
+function reversedLooper(alpha) {
+  for (let i = alpha.length - 1; i >= 0; i--) {
     alert(alpha[i]);
   }
   return alpha;
 }
 
-
 ////////// PROBLEM 5 //////////
 
 // Do not edit the code below.
-var nums = [1,2,3,6,22,98,45,23,22,12];
+var nums = [1, 2, 3, 6, 22, 98, 45, 23, 22, 12];
 // Do not edit the code above.
 
 /*
@@ -92,34 +89,25 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
-function evenFinder(num){
+function evenFinder(num) {
   var arr = [];
 
-  for(let i=0; i<num.length; i++){
-    if(num[i] % 2 === 0){
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] % 2 === 0) {
       arr.push(num[i]);
-    };
+    }
   }
   return arr;
 }
 evenFinder(nums);
 
-
-
-
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
-
-
-
-
-
-
 
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
+var numbersArray = [1, 2, 34, 54, 55, 34, 32, 11, 19, 17, 54, 66, 13];
 // Do not edit the code above.
 
 /*
@@ -132,18 +120,17 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 //Code Here
 
-function divider(numbersArray){
-  evens = numbersArray.filter(function(number){
-  		return number % 2 === 0;
+function divider(numbersArray) {
+  evens = numbersArray.filter(function(number) {
+    return number % 2 === 0;
   });
-  odds = numbersArray.filter(function(number){
-  		return number % 2 !== 0;
+  odds = numbersArray.filter(function(number) {
+    return number % 2 !== 0;
   });
-  return [evens,odds];
+  return [evens, odds];
 }
 
-divider(numbersArray)
-
+divider(numbersArray);
 
 ////////// PROBLEM 7 //////////
 
@@ -165,16 +152,16 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-function finder(arr){
+function finder(arr) {
   var r = getRandomArbitrary();
   console.log(r);
-  return arr.indexOf(r) === -1 ? false: true;
+  return arr.indexOf(r) === -1 ? false : true;
 }
 
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
-var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
+var myGroceryList = ["chips", "pizza", "hotpockets", "MtnDew", "corndogs"];
 // Do not edit the code above.
 
 /*
@@ -201,12 +188,11 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 removeItem = (myGroceryList, item) => {
-  return myGroceryList && item ? myGroceryList.filter(e => e !== item) : []
-}
+  return myGroceryList && item ? myGroceryList.filter(e => e !== item) : [];
+};
 addItem = (myGroceryList, item) => {
-  return myGroceryList && item ? myGroceryList.concat(item) : []
-}
-
+  return myGroceryList && item ? myGroceryList.concat(item) : [];
+};
 
 ////////// PROBLEM 9 //////////
 
@@ -216,19 +202,17 @@ addItem = (myGroceryList, item) => {
 
 //Code Here
 var maker = () => {
-  var arr = []
-  for(var i = 1; i < 216; i++){
-    arr.push(i)
+  var arr = [];
+  for (var i = 1; i < 216; i++) {
+    arr.push(i);
   }
   return arr;
-}
-
-
+};
 
 ////////// PROBLEM 10 //////////
 
 // Do not edit the code below.
-var numbers = [5, '9', 16, 19, '25', '34', 48];
+var numbers = [5, "9", 16, 19, "25", "34", 48];
 // Do not edit the code above.
 
 /*
@@ -236,10 +220,9 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   Return a new array after adding ten to each item in numbers. 
   *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 */
-  
-//Code Here
-addTen = numbers => numbers.map(e => parseInt(e) + 10)
 
+//Code Here
+addTen = numbers => numbers.map(e => parseInt(e) + 10);
 
 ////////// PROBLEM 11 //////////
 
@@ -248,10 +231,10 @@ var num1 = Math.floor(Math.random() * 30);
 var num2 = Math.floor(Math.random() * 30);
 var arr1 = [];
 var arr2 = [];
-for(var i = 0; i < num1; i++){
+for (var i = 0; i < num1; i++) {
   arr1.push(i);
 }
-for(var i = 0; i < num2; i++){
+for (var i = 0; i < num2; i++) {
   arr2.push(i);
 }
 // Do not edit the code above.
@@ -263,8 +246,7 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-longer = (arr1, arr2) => arr1 > arr2 ? arr1 : arr2
-
+longer = (arr1, arr2) => (arr1 > arr2 ? arr1 : arr2);
 
 /*
   As a continuation of the previous problem, write another function called 'both'.
@@ -277,20 +259,19 @@ longer = (arr1, arr2) => arr1 > arr2 ? arr1 : arr2
 //Code Here
 both = (arr1, arr2) => {
   var longer, shorter;
-  longer = arr1 > arr2 ? arr1 : arr2
-  shorter = arr1 < arr2 ? arr1 : arr2
- 
-  var newArr = []
-  for(var i = 0; i < longer.length; i++){
-    for(var j = 0; j < shorter.length; j++){
+  longer = arr1 > arr2 ? arr1 : arr2;
+  shorter = arr1 < arr2 ? arr1 : arr2;
+
+  var newArr = [];
+  for (var i = 0; i < longer.length; i++) {
+    for (var j = 0; j < shorter.length; j++) {
       if (longer[i] === shorter[j]) {
-        newArr.push(longer[i])
+        newArr.push(longer[i]);
       }
     }
   }
-  return newArr
-}
-
+  return newArr;
+};
 
 ////////// PROBLEM 12 //////////
 
@@ -298,27 +279,27 @@ both = (arr1, arr2) => {
 var devMountainEmployees = [];
 
 var tyler = {
-    name: 'Tyler',
-    position: 'Lead Instructor/Engineer',
-    spiritAnimal: 'Honey Badger'
+  name: "Tyler",
+  position: "Lead Instructor/Engineer",
+  spiritAnimal: "Honey Badger"
 };
 
 var cahlan = {
-    name: 'Cahlan',
-    position: 'CEO',
-    spiritAnimal: 'butterfly'
+  name: "Cahlan",
+  position: "CEO",
+  spiritAnimal: "butterfly"
 };
 
 var ryan = {
-    name: 'Ryan',
-    position: 'Marketing',
-    spiritAnimal: 'fox'
+  name: "Ryan",
+  position: "Marketing",
+  spiritAnimal: "fox"
 };
 
 var colt = {
-    name: 'Colt',
-    position: 'Everything really',
-    spiritAnimal: 'Young Male Horse'
+  name: "Colt",
+  position: "Everything really",
+  spiritAnimal: "Young Male Horse"
 };
 // Do not edit the code above.
 
@@ -338,19 +319,18 @@ console.log(devMountainEmployees.length);
 */
 
 //Code Here
-function findHimself(arr){
+function findHimself(arr) {
   for (i = 0; i < arr.length; i++) {
-    if (arr[i].name === 'Cahlan') {
-        arr.splice(i, 1)
-      }
-    }return arr
+    if (arr[i].name === "Cahlan") {
+      arr.splice(i, 1);
+    }
   }
-  
-  findHimself(devMountainEmployees)
+  return arr;
+}
 
+findHimself(devMountainEmployees);
 
 ////////// PROBLEM 13 //////////
-
 
 /*
   A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects) of Data is to have an Array full of objects. 
@@ -360,7 +340,6 @@ function findHimself(arr){
 //Code Here
 var users = [];
 
-
 /*
   Now add three user objects to your users array. Each user object should contain the following properties. name, email, password, username.
 
@@ -369,36 +348,36 @@ var users = [];
 
 // Do not edit the code below.
 var user1 = {
-    name: 'T McGinnis',
-    email: 'tmcginnis33@gmail.com',
-    password: 'iLoveJavaScript',
-    username: 'infiniteLoop'
+  name: "T McGinnis",
+  email: "tmcginnis33@gmail.com",
+  password: "iLoveJavaScript",
+  username: "infiniteLoop"
 };
 // Do not edit the code above.
 
 //Code Here
 var user2 = {
-  name: 'Tyle McGinnis',
-  email: 'tylemcginnis33@gmail.com',
-  password: 'iLoveJavaScript',
-  username: 'infiniteLoop'
-}
+  name: "Tyle McGinnis",
+  email: "tylemcginnis33@gmail.com",
+  password: "iLoveJavaScript",
+  username: "infiniteLoop"
+};
 
 var user3 = {
-    name: 'Tyl McGinnis',
-    email: 'tylmcginnis33@gmail.com',
-    password: 'iLoveJavaScript',
-    username: 'infiniteLoop'
-}
+  name: "Tyl McGinnis",
+  email: "tylmcginnis33@gmail.com",
+  password: "iLoveJavaScript",
+  username: "infiniteLoop"
+};
 
 var user4 = {
-      name: 'Ty McGinnis',
-      email: 'tymcginnis33@gmail.com',
-      password: 'iLoveJavaScript',
-      username: 'infiniteLoop'
-}
+  name: "Ty McGinnis",
+  email: "tymcginnis33@gmail.com",
+  password: "iLoveJavaScript",
+  username: "infiniteLoop"
+};
 
-users.push(user1, user2, user3, user4);
+// users.push(user1, user2, user3, user4);
 
 /*
   Now you have a very common data structure. 
@@ -411,8 +390,6 @@ users.push(user1, user2, user3, user4);
 */
 
 //Code Here
-
-
 
 /*
   The activity we just did is very much how data works in 'the real world'.
